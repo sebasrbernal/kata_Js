@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="inicio" id="inicio">
+        <h1>CAJERO ATM</h1>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario">
+        <label for="contrasenia">Contraseña</label>
+        <input type="text" name="contrasenia" id="contrasenia">
+        <button onclick="ingresar()">Ingresar</button>
+    </main>
+
+
+    <div class="acciones" id="acciones">
+        <h2>Bienvenidx <span id="nombre-usuario"></span></h2>
+        <p id="info">...</p>
+        <button id="consultar">Consultar saldo</button>
+        <button onclick="retirarSaldoHTML(posicionActual)">Hacer un retiro</button>
+        <button onclick="ingresarSaldoHTML(posicionActual)">Hacer un depósito</button>
+    </div>
+
+    <div class="retirarSaldo" id="retirarSaldo">
+        <label for="retirarSaldo">Saldo a retirar</label>
+        <input type="text" name="retirar" id="retirar">
+        <button onclick="ingresarRetiro(posicionActual)">Ingresar</button>
+        <button onclick="salirRetirar()">Salir</button>
+        <p id="infRetirado"></p>
+        <p id="VolverRetiro"></p>
+
+
+    </div>
+
+    <div class="depositoSaldo" id="depositoSaldo">
+        <label for="depositoSaldo">Saldo a depositar</label>
+        <input type="text" name="deposito" id="deposito">
+        <button onclick="ingresarDeposito(posicionActual)">Ingresar</button>
+        <button onclick="salirDeposito()">Salir</button>
+        <p id="infDeposito"></p>
+        <p id="VolverDeposito"></p>
+
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
