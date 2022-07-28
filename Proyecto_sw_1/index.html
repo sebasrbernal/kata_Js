@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./swapi.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="inicio" id="inicio">
+        <h1 id="encabezado">Personajes de StarWars</h1>
+        <label for="personaje">Personaje</label>
+        <input id="nombreInput" />
+        <button onclick="buscarBtn()">Buscar</button>
+        
+    </main>
+
+    <div class="acciones" id="acciones">
+        <h2>Acerca de  <span id="nombrePersonaje"></span></h2>
+        <div id="container"></div>
+        <h4 id="VolverMenu"></h4>
+        <button onclick="salirRetirar()">Salir</button>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
